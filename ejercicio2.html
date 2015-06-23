@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ejercicio 2</title>
+	<link rel="stylesheet" href="">
+	<script>
+		var usuario = prompt("Usuario");
+		var curso = prompt("Introduce el curso");
+		//dia
+		var dia = prompt("Introduce el día");
+		//mes
+		var mes = prompt("Introduce el mes");
+		//tiempo
+		var tiempo = 500;
+		console.log(typeof(usuario));
+		var salida = '';
+	</script>
+</head>
+<body>
+	<div class="naranja">
+		<h1>Ejercicio 2</h1>
+	</div>
+	
+	<div class="azul">
+		<p>
+			<span>Usuario: </span><script>document.write(usuario)</script>
+		</p>
+		<p>
+			<span>Curso:</span> <script>document.write(curso)</script>
+		</p>
+		<p>
+			<span>Dia:</span> <script>document.write(dia)</script>
+		</p>
+		<p>
+			<span>Mes:</span> <script>document.write(mes)</script>
+		</p>
+		<p>
+			<span>Tiempo:</span> <script>document.write(tiempo)</script>
+		</p>
+	</div>
+	<footer>
+		<p></p>
+	</footer>
+</body>
+<style>
+	.azul {
+		margin: 0 auto;
+		border: 4px outset #0ABEEB;
+		padding: 0 2%;
+		width: 50%;
+		overflow: auto;
+		border-radius: 15px 0 15px 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
+
+	}
+	.naranja {
+		margin: 0 auto;
+		border: 4px outset #EB9D16;
+		background-color: #F4A702;
+		border-radius: 0 15px 0 15px;
+		width: 50%;
+		text-align: center;
+		margin-bottom: 2%;
+	}
+	span{
+		font-weight: 600;
+		font-size: 1em;
+	}
+	@font-face {
+		font-family: "Chinese_rocks";  	  
+		src: url("../fonts/chineserocks.ttf"); 	
+		/*font-size: 3em;*/
+	}
+	h1 {
+		font-family: "chinese_rocks";
+		font-size: 3em;
+		/*width: 100%;*/
+	}
+	@media (max-width: 800px) {
+		.naranja{
+			width: 100%;
+		}
+		.azul {
+			width: 100%;
+		}
+	}
+</style>
+</html>
